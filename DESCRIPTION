@@ -1,0 +1,44 @@
+Package: epclust
+Title: Clustering Individual Electricity Power Curves
+Description: Electric Power curves CLUSTering, through their wavelets
+    decomposition. The main function 'claws' takes (usually long) time-series
+    in input, and return as many clusters centers as requested, along with their
+    ranks and synchrones (sum of all curves in one group).
+    For the method, see ?claws and https://arxiv.org/abs/1101.4744.
+    For usage examples, see ?claws and package vignette.
+Version: 0.1-0
+Author: Benjamin Auder <Benjamin.Auder@math.u-psud.fr> [aut,cre],
+    Jairo Cugliari <Jairo.Cugliari@univ-lyon2.fr> [aut],
+    Yannig Goude <Yannig.Goude@edf.fr> [ctb],
+    Jean-Michel Poggi <Jean-Michel.Poggi@math.u-psud.fr> [ctb]
+Maintainer: Benjamin Auder <Benjamin.Auder@math.u-psud.fr>
+Depends:
+    R (>= 3.0.0)
+Imports:
+    methods,
+    parallel,
+    cluster,
+    bigmemory,
+    wavethresh,
+    Rwave
+Suggests:
+    synchronicity,
+    devtools,
+    testthat,
+    roxygen2,
+    MASS,
+    wmtsa,
+    DBI,
+    digest
+License: MIT + file LICENSE
+RoxygenNote: 6.0.1
+Collate:
+    'main.R'
+    'clustering.R'
+    'de_serialize.R'
+    'A_NAMESPACE.R'
+    'computeSynchrones.R'
+    'computeWerDists.R'
+    'plot.R'
+    'simulateCurve.R'
+    'utils.R'
