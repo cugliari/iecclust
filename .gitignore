@@ -1,0 +1,9 @@
+.Rbuildignore
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+ieclust.Rproj
+src/*.o
+src/*.so
+src/*.dll
